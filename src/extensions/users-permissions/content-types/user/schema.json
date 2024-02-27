@@ -65,7 +65,18 @@
       "inversedBy": "users",
       "configurable": false
     },
-
+    "videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video",
+      "mappedBy": "user"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note",
+      "mappedBy": "user"
+    },
     "firstName": {
       "type": "string"
     },
