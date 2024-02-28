@@ -14,7 +14,7 @@ module.exports = (config, { strapi }) => {
     const response = await strapi.entityService.update(uid, user.id, payload);
 
     console.log("Updated credits:", response);
-    console.log("############ Inside middleware end #############");
+    console.log("############ Inside middleware end ##############");
 
     await next();
   };
