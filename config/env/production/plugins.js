@@ -1,5 +1,5 @@
 module.exports = {
-  'summary-ai': {
+  'strapi-summarize-ai-plugin': {
     enabled: true,
     config: {
       openAIApiKey: process.env.OPEN_AI_API_KEY,
